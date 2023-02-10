@@ -1,6 +1,11 @@
 body {
     margin: 0;
 }
+.container{
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
 .c1{
     text-align: center;
     background-color: #6943FF;
