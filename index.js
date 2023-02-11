@@ -10,7 +10,9 @@ let button=document.getElementById("btn")
 button.addEventListener("click",func)
 function func(){
     let num=textel.value
-    bottomel.innerHTML=
+    if(num>=0)
+    {
+        bottomel.innerHTML=
     `<div class="c3">
         Length(Meter/Feet)
         <div class="c4">
@@ -30,4 +32,13 @@ function func(){
         </div>
     </div>
     `
+    }
+    else
+    {
+        bottomel.innerHTML=
+        `<div class="c3">
+            Cannot convert negative numbers🙂
+        </div>`
+    }
+    
 }
